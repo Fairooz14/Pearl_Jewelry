@@ -1,0 +1,400 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Gwendolyn', cursive;
+    font-family: 'Metamorphous', cursive;
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#sale {
+    text-align: center;
+    background-color: #e5e1dd;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 100;
+    font-family: serif;
+}
+
+/* 
+HEADER--------------->
+*/
+.navigation {
+    overflow: hidden;
+    background-color: #F8F0E5;
+    margin-top: 0px;
+    border-bottom: 1px solid beige;
+
+}
+
+.navigation .container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.navigation .navbar {
+    position: relative;
+    display: contents;
+}
+
+.navigation .navbar .logo-toggle-container {
+    position: absolute;
+    left: 50%;
+    top: 20px;
+    transform: translateX(-50%);
+}
+
+/* 
+logo ------------------>
+*/
+.navigation .navbar .logo-toggle-container span {
+    display: none;
+}
+
+.navigation .navbar .logo-toggle-container a {
+    display: contents;
+
+}
+
+.navigation .navbar .logo-toggle-container a img {
+    width: 120px;
+    height: 120px;
+
+}
+
+/* 
+Menu------------------>
+*/
+.navigation .menu {
+    text-align: right;
+}
+
+.btn-search {
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 30px;
+
+}
+
+.navigation .menu li input {
+    height: 30px;
+    border-radius: 100px;
+}
+
+@media screen and (min-width:1324px) {
+    .navigation .menu {
+        display: block !important;
+        height: auto !important;
+    }
+}
+
+.navigation .menu li {
+    display: inline-block;
+    padding: 43px 10px;
+}
+
+.navigation .menu li a {
+    font-family: 'Metamorphous', cursive;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.navigation .menu li a:hover {
+    font-family: 'Metamorphous', cursive;
+    color: #a29a82;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.under {
+    border-bottom: 2px solid black;
+    border-width: 0%;
+}
+
+
+.under:hover {
+    border-bottom: 2px solid #a29a82;
+    width: 100%;
+    transform: scaleX(1);
+}
+
+
+
+.navigation .menu li:nth-child(1),
+.navigation .menu li:nth-child(2),
+.navigation .menu li:nth-child(3),
+.navigation .menu li:nth-child(4),
+.navigation .menu li:nth-child(5) {
+    float: left;
+}
+
+
+.drop-btn {
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    outline: none;
+    color: black;
+    background-color: inherit;
+    font-family: 'Metamorphous', cursive;
+    margin: 0;
+    cursor: pointer;
+}
+
+.dropdown-content a {
+    text-align: center;
+    font-family: 'Metamorphous', cursive;
+    color: black;
+    text-decoration: none;
+    display: block;
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.dropdown-content {
+    float: right;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: #F8F0E5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-size: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.dropdown:hover .dropdown-content {
+    text-align: center;
+    display: block;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    .navigation .navbar .logo-toggle-container a img {
+        width: 100px;
+        height: 100px;
+
+    }
+
+    .navigation .navbar .logo-toggle-container {
+        position: static;
+        transform: translateX(0%);
+    }
+
+    .navigation .navbar .logo-toggle-container a {
+        width: 80%;
+    }
+
+    .navigation .navbar .logo-toggle-container .toggle-box {
+        position: absolute;
+        right: 10px;
+        top: 30px;
+        display: block;
+        width: 30px;
+        background: #F8F0E5;
+        padding: 15px 9px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .navigation .navbar .logo-toggle-container .toggle-box .toggle-box {
+        display: block;
+        max-width: 90%;
+        margin: auto;
+        height: 2px;
+        background-color: #fff;
+        margin-bottom: 4px;
+    }
+
+    .navigation .navbar .logo-toggle-container .toggle-box span {
+        margin-bottom: 0;
+        width: 50px;
+        height: 100px;
+    }
+
+    .navigation .menu {
+        text-align: left;
+        display: none;
+    }
+
+    .navigation .menu li:nth-child(8),
+    .navigation .menu li:nth-child(9) {
+        display: none;
+    }
+
+    .navigation .menu li {
+        height: 35px;
+        display: block;
+        float: none !important;
+        padding: 3px 10px;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+/* 
+opening page
+*/
+.hero {
+    width: 90%;
+    height: 75%;
+    border-radius: 20px;
+    background-color: #e5e1dd;
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(rgba(160, 160, 152, 0.6), rgba(162, 154, 130, 0.45)), url("hero.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero .hero-text {
+    max-width: 90%;
+    width: 90%;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    padding-top: 100px;
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+.hero-text h1 {
+    font-family: 'Metamorphous', cursive;
+    font-size: 3rem;
+    font-weight: 100;
+    color: #fae7ce;
+
+}
+
+.hero-text p {
+
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #fae7ce;
+
+}
+
+.hero-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #F8F0E5;
+}
+
+.hero button {
+    font-family: 'Metamorphous', cursive;
+    width: 170px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #F8F0E5;
+    color: #575244;
+    font-size: 1.3rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #a29a82;
+    color: #F8F0E5;
+
+}
+
+/* 
+Terms and Condition Cards 
+*/
+.term-card {
+    width: 70rem;
+    margin: auto;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* 100/4 = 25% */
+    justify-content: space-around;
+    /* space arround each term-list*/
+}
+
+.terms-list {
+    flex-basis: 23%;
+    margin: 10px 0px;
+    padding: 20px 0px;
+    text-align: center;
+    border-radius: 20px;
+    background: #F8F0E5;
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -20px 60px #ffffff;
+    position: relative;
+
+}
+
+
+
+/* 
+Positioning icons of tearm cards------------------->
+*/
+.term-card .terms-list i {
+    padding: 10px, 0px;
+    font-size: 25px;
+    color: #a29a82;
+}
+
+/* 
+Positioning h5 tags of tearm cards------------------->
+*/
+.term-card .terms-list h5 {
+
+    padding: 10px, 0px;
+    font-size: 16px;
+    color: #a29a82;
+}
+
+/* 
+Positioning p tags of tearm cards------------------->
+*/
+.term-card .terms-list p {
+
+    padding: 5px;
+    font-size: 14px;
+    color: #584e4e;
+}
+
+@media only screen and (max-width:900px) {
+    .term-card {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .terms-list {
+        margin: 10px;
+    }
+}
+
+/* 
+Log in and register form----------------->
+*/
