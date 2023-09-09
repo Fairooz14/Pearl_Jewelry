@@ -81,17 +81,32 @@ Menu------------------>
     text-align: right;
 }
 
-.btn-search {
+.btn-search,
+.btn-signin {
+    width: 80px;
     font-size: 16px;
     border-radius: 10px;
     cursor: pointer;
     height: 30px;
+    background-color: #F8F0E5;
+    ;
+}
+
+
+.btn-signin:hover {
+    background-color: #a29a82;
+    color: #F8F0E5;
+}
+
+.btn-search:hover {
+    background-color: #a29a82;
+    color: #F8F0E5;
 
 }
 
 .navigation .menu li input {
     height: 30px;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 @media screen and (min-width:1324px) {
@@ -240,11 +255,6 @@ Menu------------------>
 
     .navigation .menu {
         text-align: left;
-        display: none;
-    }
-
-    .navigation .menu li:nth-child(8),
-    .navigation .menu li:nth-child(9) {
         display: none;
     }
 
